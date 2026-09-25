@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toko Barokah - Sembako Murah Puger</title>
+<style>
+body{font-family:sans-serif;margin:0;background:#f6f6f6}
+header{background:#16a34a;color:white;padding:18px;text-align:center}
+.container{padding:15px;max-width:500px;margin:auto}
+.card{background:white;border-radius:12px;padding:15px;margin-bottom:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);display:flex;justify-content:space-between;align-items:center}
+.btn{background:#16a34a;color:white;border:0;padding:8px 14px;border-radius:8px;font-weight:bold}
+.foot{text-align:center;padding:20px;color:#777;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>TOKO BAROKAH</h1>
+<p>Sembako Murah & Lengkap - Puger, Jember</p>
+<a href="https://wa.me/6282335090044" style="color:yellow;font-weight:bold">Chat WA Admin</a>
+</header>
+<div class="container">
+<h2>Produk Hari Ini</h2>
+<div class="card"><div><b>Beras 5kg</b><br><small>Rp 65.000</small></div><button class="btn" onclick="pesan('Beras 5kg')">Beli</button></div>
+<div class="card"><div><b>Minyak Goreng 1L</b><br><small>Rp 16.000</small></div><button class="btn" onclick="pesan('Minyak 1L')">Beli</button></div>
+<div class="card"><div><b>Gula Pasir 1kg</b><br><small>Rp 14.500</small></div><button class="btn" onclick="pesan('Gula 1kg')">Beli</button></div>
+<div class="card"><div><b>Telur 1kg</b><br><small>Rp 28.000</small></div><button class="btn" onclick="pesan('Telur 1kg')">Beli</button></div>
+</div>
+<div class="foot">Alamat: Puger, Jember<br>Buka 07.00 - 21.00<br>WA: 0823-3509-0044</div>
+<script>
+function pesan(nama){
+ window.open('https://wa.me/6282335090044?text=Halo%20Toko%20Barokah%2C%20saya%20mau%20pesan%20'+encodeURIComponent(nama), '_blank')
+}
+</script>
+</body>
+</html>
